@@ -92,13 +92,15 @@ pub fn dna_generator(
 
     // Generate the mutated sequences with variations and biases
     for i in 0..records_number {
-        let begin_variations: String = (0..variation_len)
+        let mut variation_length = rng.gen_range(0..variation_len);
+        let begin_variations: String = (0..variation_length)
             .map(|_| {
                 let idx = rng.gen_range(0..dna.len());
                 dna[idx] as char
             })
             .collect();
-        let end_variations: String = (0..variation_len)
+        variation_length = rng.gen_range(0..variation_len);
+        let end_variations: String = (0..variation_length)
             .map(|_| {
                 let idx = rng.gen_range(0..dna.len());
                 dna[idx] as char
