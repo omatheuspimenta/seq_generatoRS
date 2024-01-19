@@ -40,7 +40,7 @@ Options:
       --records-length <RECORDS_LENGTH>
           Length of each record [default: 10000]
       --mutation-rate <MUTATION_RATE>
-          Mutation rate Rates of evolutionary change in viruses: patterns and determinants 'Another relationship between mutation rate and genome size was noted by Drake, who proposed a ‘universal’ genomic mutation rate in DNA microorganisms of 3.4*10^–3 mutations per genome, per genomic replication. [REFERENCE](https://www.nature.com/articles/nrg2323) [default: 0.0034]
+          Mutation rate Rates of evolutionary change in viruses: patterns and determinants Another relationship between mutation rate and genome size was noted by Drake, who proposed a 'universal' genomic mutation rate in DNA microorganisms of 3.4*10^–3 mutations per genome, per genomic replication. [REFERENCE](https://www.nature.com/articles/nrg2323) [default: 0.0034]
       --bias-rate <BIAS_RATE>
           Bias rate [default: 0.0005]
       --variation-rate <VARIATION_RATE>
