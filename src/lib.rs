@@ -38,7 +38,7 @@ pub fn dna_generator(
     let mut file_name = fs::OpenOptions::new()
         .create(true)
         .append(true)
-        .open(format!("seq_ref_{}.txt", records_length))
+        .open(format!("reference_{}.fasta", records_length))
         .unwrap();
 
     // Generate the reference sequence
@@ -87,7 +87,7 @@ pub fn dna_generator(
     file_name = fs::OpenOptions::new()
         .create(true)
         .append(true)
-        .open(format!("seq_mut_{}.fasta", records_length))
+        .open(format!("sequences_{}.fasta", records_length))
         .unwrap();
 
     // Generate the mutated sequences with variations and biases

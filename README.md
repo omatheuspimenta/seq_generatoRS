@@ -61,6 +61,12 @@ seq_generator --records-number 1000 --records-length 10000
 
 To adjust mutation, bias, or variation rate, ensure values greater than 0 are used, as these parameters represent the maximum value when multiplied by the sequence length in `seq_generatoRS`.
 
+Three files will be generated:
+
+- `mutation_x.txt`: includes information about mutations and their locations.
+- `reference_x.fasta`: stores the reference sequence, serving as the basis for mutation insertions.
+- `sequences_x.fasta`: encompasses the specified number of sequences (`--records-number`) with mutations, variations, and bias.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
