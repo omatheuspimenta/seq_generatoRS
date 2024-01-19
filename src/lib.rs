@@ -117,7 +117,7 @@ pub fn dna_generator(
             seq_mut.replace_range(*k..*k + 1, &String::from(v.to_string()));
         }
         file_name
-            .write_all(format!("sequence_{}\n", i + 1).as_bytes())
+            .write_all(format!(">sequence_{}\n", i + 1).as_bytes())
             .unwrap();
         file_name
             .write_all(format!("{}\n", seq_mut).as_bytes())
